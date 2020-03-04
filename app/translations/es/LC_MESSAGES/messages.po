@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-03-02 23:01-0300\n"
+"POT-Creation-Date: 2020-03-04 02:03-0300\n"
 "PO-Revision-Date: 2017-09-29 23:25-0700\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: es\n"
@@ -50,7 +50,7 @@ msgstr "Email"
 msgid "Repeat Password"
 msgstr "Repetir Contraseña"
 
-#: app/forms.py:20 app/routes.py:69 app/templates/register.html:5
+#: app/forms.py:20 app/routes.py:74 app/templates/register.html:5
 msgid "Register"
 msgstr "Registrarse"
 
@@ -78,72 +78,80 @@ msgstr "Pedir una nueva contraseña"
 msgid "Say something"
 msgstr "Dí algo"
 
-#: app/routes.py:22
+#: app/routes.py:27
 msgid "Your post is now live!"
 msgstr "¡Tu artículo ha sido publicado!"
 
-#: app/routes.py:30 app/templates/base.html:21
+#: app/routes.py:35 app/templates/base.html:21
 msgid "Home"
 msgstr "Inicio"
 
-#: app/routes.py:43
+#: app/routes.py:48
 msgid "Invalid username or password."
 msgstr "Nombre de usuario o contraseña inválidos"
 
-#: app/routes.py:52 app/templates/login.html:5
+#: app/routes.py:57 app/templates/login.html:5
 msgid "Sign In"
 msgstr "Ingresar"
 
-#: app/routes.py:66
+#: app/routes.py:71
 msgid "Congratulations, you are now a registered user!"
 msgstr "¡Felicitaciones, ya eres un usuario registrado!"
 
-#: app/routes.py:105
+#: app/routes.py:110
 msgid "Your changes have been saved."
 msgstr "Tus cambios han sido salvados."
 
-#: app/routes.py:110 app/templates/edit_profile.html:5
+#: app/routes.py:115 app/templates/edit_profile.html:5
 msgid "Edit Profile"
 msgstr "Editar Perfil"
 
-#: app/routes.py:118 app/routes.py:136
+#: app/routes.py:123 app/routes.py:141
 #, python-format
 msgid "User %(username)s not found."
 msgstr "El usuario %(username)s no ha sido encontrado."
 
-#: app/routes.py:122
+#: app/routes.py:127
 msgid "You cannot follow yourself!"
 msgstr "¡No te puedes seguir a tí mismo!"
 
-#: app/routes.py:127
+#: app/routes.py:132
 #, python-format
 msgid "You are following %(username)s!"
 msgstr "¡Ahora estás siguiendo a %(username)s!"
 
-#: app/routes.py:140
+#: app/routes.py:145
 msgid "You cannot unfollow yourself!"
 msgstr "¡No te puedes dejar de seguir a tí mismo!"
 
-#: app/routes.py:145
+#: app/routes.py:150
 #, python-format
 msgid "You are not following %(username)s any longer."
 msgstr "No estás siguiendo a %(username)s."
 
-#: app/routes.py:157 app/templates/base.html:22
+#: app/routes.py:162 app/templates/base.html:22
 msgid "Explore"
 msgstr "Explorar"
 
-#: app/routes.py:171
+#: app/routes.py:176
 msgid "Check your email for the instructions to reset your password."
 msgstr "Busca en tu email las instrucciones para crear una nueva contraseña"
 
-#: app/routes.py:174
+#: app/routes.py:179
 msgid "Reset Password"
 msgstr "Nueva Contraseña"
 
-#: app/routes.py:190
+#: app/routes.py:195
 msgid "Your password has been reset."
 msgstr "Tu contraseña ha sido cambiada."
+
+#: app/translate.py:9
+msgid "Error: the translation service is not configured."
+msgstr "Error: el servicio de traducciones no está configurado."
+
+#: app/translate.py:15
+msgid "Error: the translation service failed."
+msgstr "Error el servicio de traducciones ha fallado."
 
 #: app/templates/404.html:4
 msgid "Not Found"
@@ -164,7 +172,11 @@ msgstr "El administrador ha sido notificado. ¡Lamentamos la inconveniencia!"
 #: app/templates/_post.html:14
 #, python-format
 msgid "%(username)s said %(when)s"
-msgstr ""
+msgstr "%(username)s dijo %(when)s"
+
+#: app/templates/_post.html:24
+msgid "Translate"
+msgstr "Traducir"
 
 #: app/templates/base.html:4
 msgid "Welcome to Microblog"
@@ -181,6 +193,10 @@ msgstr "Perfil"
 #: app/templates/base.html:29
 msgid "Logout"
 msgstr "Salir"
+
+#: app/templates/base.html:66
+msgid "Error: Could not contact server."
+msgstr "Error: el servidor no pudo ser contactado."
 
 #: app/templates/index.html:5
 #, python-format
@@ -245,30 +261,27 @@ msgstr "Seguir"
 msgid "Unfollow"
 msgstr "Dejar de seguir"
 
-msgid "Remember Me"
-msgstr "Recordarme"
+#~ msgid "Remember Me"
+#~ msgstr "Recordarme"
 
-msgid "Search"
-msgstr "Buscar"
+#~ msgid "Search"
+#~ msgstr "Buscar"
 
-msgid "Invalid username or password"
-msgstr "Nombre de usuario o contraseña inválidos"
+#~ msgid "Invalid username or password"
+#~ msgstr "Nombre de usuario o contraseña inválidos"
 
-msgid "Check your email for the instructions to reset your password"
-msgstr "Busca en tu email las instrucciones para crear una nueva contraseña"
+#~ msgid "Check your email for the instructions to reset your password"
+#~ msgstr "Busca en tu email las instrucciones para crear una nueva contraseña"
 
-msgid "You are not following %(username)s."
-msgstr "No estás siguiendo a %(username)s."
+#~ msgid "You are not following %(username)s."
+#~ msgstr "No estás siguiendo a %(username)s."
 
-msgid "%(username)s said %(when)s"
-msgstr "%(username)s dijo %(when)s"
+#~ msgid "Search Results"
+#~ msgstr "Resultados de Búsqueda"
 
-msgid "Search Results"
-msgstr "Resultados de Búsqueda"
+#~ msgid "Previous results"
+#~ msgstr "Resultados previos"
 
-msgid "Previous results"
-msgstr "Resultados previos"
-
-msgid "Next results"
-msgstr "Resultados próximos"
+#~ msgid "Next results"
+#~ msgstr "Resultados próximos"
 
